@@ -26,6 +26,8 @@
     "@google-cloud/storage": "^7.16.0",
     "@huggingface/hub": "^2.3.0",
     "@supabase/supabase-js": "^2.50.3",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
     "@upstash/ratelimit": "^2.0.1",
     "@vercel/edge-config": "^1.4.0",
     "@vercel/kv": "^2.0.0",
@@ -36,6 +38,8 @@
     "jszip": "^3.10.1",
     "node-fetch": "^3.3.2",
     "ollama-ai-provider": "latest",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
     "serverless-http": "^3.2.0",
     "stripe": "^18.4.0",
     "zod": "^3.23.8"
