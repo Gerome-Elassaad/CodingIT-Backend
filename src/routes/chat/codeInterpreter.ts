@@ -1,5 +1,3 @@
-import 'server-only';
-
 import { Sandbox } from '@e2b/code-interpreter';
 
 const E2B_API_KEY = process.env.E2B_API_KEY;

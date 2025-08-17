@@ -1,0 +1,2 @@
+export declare const dynamic = "force-dynamic";
+export declare const GET: (req: import("express").Request, res: import("express").Response, next: import("express").NextFunction) => Promise<void>;
