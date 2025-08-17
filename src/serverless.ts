@@ -15,7 +15,7 @@ const corsOptions = {
   origin: [
     'https://codinit.dev',
     'https://www.codinit.dev',
-    'https://codingit-1.vercel.app',
+    'https://codingit.vercel.app',
     'http://localhost:3000',
     'http://127.0.0.1:3000'
   ],
