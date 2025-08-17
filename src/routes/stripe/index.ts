@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import express from 'express';
 import { createServerClient } from '@/lib/supabase-server';
 import { createCheckoutSession, createPortalSession } from '@/lib/subscription';
 import { STRIPE_PLANS, stripe } from '@/lib/stripe';

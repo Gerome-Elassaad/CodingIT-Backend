@@ -1,20 +1,12 @@
 import express from 'express';
 import cors from 'cors';
 import { stripeRouter } from './routes/stripe';
+import { stripeRouter } from './routes/stripe';
 import { authRouter } from './routes/auth';
 import { chatRouter } from './routes/chat';
 import { codeRouter } from './routes/code';
-import { deploymentsRouter } from './routes/deployments';
-import { edgeFlagsRouter } from './routes/edge-flags';
 import { filesRouter } from './routes/files';
-import { flagsRouter } from './routes/flags';
-import { importDatasetRouter } from './routes/import-dataset';
-import { integrationsRouter } from './routes/integrations';
 import { sandboxRouter } from './routes/sandbox';
-import { subscriptionRouter } from './routes/subscription';
-import { terminalRouter } from './routes/terminal';
-import { webhooksRouter } from './routes/webhooks';
-import { workflowsRouter } from './routes/workflows';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -42,21 +34,12 @@ app.get('/health', (req, res) => {
 });
 
 // API routes
+app.use('/api/stripe', stripeRouter);
 app.use('/api/auth', authRouter);
 app.use('/api/chat', chatRouter);
 app.use('/api/code', codeRouter);
-app.use('/api/deployments', deploymentsRouter);
-app.use('/api/edge-flags', edgeFlagsRouter);
 app.use('/api/files', filesRouter);
-app.use('/api/flags', flagsRouter);
-app.use('/api/import-dataset', importDatasetRouter);
-app.use('/api/integrations', integrationsRouter);
 app.use('/api/sandbox', sandboxRouter);
-app.use('/api/stripe', stripeRouter);
-app.use('/api/subscription', subscriptionRouter);
-app.use('/api/terminal', terminalRouter);
-app.use('/api/webhooks', webhooksRouter);
-app.use('/api/workflows', workflowsRouter);
 
 // Error handling middleware
 app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
