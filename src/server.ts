@@ -1,7 +1,6 @@
 import express from 'express';
 import cors from 'cors';
 import { stripeRouter } from './routes/stripe';
-import { stripeRouter } from './routes/stripe';
 import { authRouter } from './routes/auth';
 import { chatRouter } from './routes/chat';
 import { codeRouter } from './routes/code';
