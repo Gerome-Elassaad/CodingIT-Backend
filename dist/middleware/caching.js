@@ -50,7 +50,7 @@ const cache = (options = {}) => {
                     body,
                 };
                 redisClient.setex(cacheKey, ttl, JSON.stringify(responseToCache))
-                    .catch(err => monitoring_1.logger.error('Cache set error', { error: err.message, cacheKey }));
+                    .catch((err) => monitoring_1.logger.error('Cache set error', { error: err.message, cacheKey }));
                 res.set('X-Cache', 'MISS');
                 return originalJson(body);
             };

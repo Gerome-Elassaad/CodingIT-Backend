@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.evaluateCode = evaluateCode;
 exports.nonEmpty = nonEmpty;
-require("server-only");
 const code_interpreter_1 = require("@e2b/code-interpreter");
 const E2B_API_KEY = process.env.E2B_API_KEY;
 const sandboxTimeout = 10 * 60 * 1000;

@@ -1,4 +1,3 @@
-import 'server-only';
 export declare function evaluateCode(sessionID: string, code: string): Promise<{
     results: import("@e2b/code-interpreter").Result[];
     stdout: string[];
