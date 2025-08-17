@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import { stripeRouter } from './routes/stripe';
 import { authRouter } from './routes/auth';
 import { chatRouter } from './routes/chat';
 import { codeRouter } from './routes/code';
@@ -10,7 +11,6 @@ import { flagsRouter } from './routes/flags';
 import { importDatasetRouter } from './routes/import-dataset';
 import { integrationsRouter } from './routes/integrations';
 import { sandboxRouter } from './routes/sandbox';
-import { stripeRouter } from './routes/stripe';
 import { subscriptionRouter } from './routes/subscription';
 import { terminalRouter } from './routes/terminal';
 import { webhooksRouter } from './routes/webhooks';
